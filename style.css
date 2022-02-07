@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+/* 'Quintessential' font-family */
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+
+body{
+    font-size: 15px;
+    font-family: 'Rowdies', Helvetica;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(247, 241, 241);
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    background: #3a504b;
+    color: #f7f7f7;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #ccff66 3px solid;
+}
+header a{
+    color: #f7f7f7;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+    
+}
+header #branding{
+    float: left;
+}
+header nav{
+    float: right;
+    margin-top: -41px;
+}
+header .highlight{
+    /* color: #0ef6be; */
+    color: #ccff66;
+    font-weight: bold;
+    text-decoration: underline ;
+    
+}
+header a:hover{
+    /* border: 1px solid #0ef6be; */
+    border: 1px solid #ccff66;
+    padding: 7px;
+    border-radius: 20%;
+    /* color:#0ef6be; */
+    color:#ccff66;
+    font-weight: bold;
+}
+#showcase{
+    min-height: 400px;
+    background: url(../images/showcase1.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -120px;
+    color: #f7f7f7;
+}
+#showcase p{
+    font-family: 'Quintessential',sans-serif;
+    color: #ccff66;
+    font-size: 20px;
+    margin-top: 50px;
+}
+#showcase h1{
+    color: #ccff66;
+    font-size: 55px;
+    margin-top: 100px;
+    margin-bottom:10px ;
+}
+#boxes{
+    margin-top: 20px;
+
+}
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+#boxes .box img{
+    width: 150px;
+}
+#boxes .box p{
+    font-family: 'Quintessential', sans-serif;
+    font-weight: 500;
+}
+#boxes .box h3:hover{
+    color: #52cfb2;
+    /* border: 1px solid black;
+    border-radius: 15px; */
+    background-color: #3a504b;
+    cursor: pointer;
+    /* padding: 5px; */
+}
+
+.clearfix{
+    clear: both;
+}
+footer {
+    padding: 15px;
+    margin-top: 15px;
+    color: #f7f7f7;
+    background-color: #3a504b;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    
+}
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+
+}
+
+aside#sidebar p{
+       font-family: 'Quintessential',serif;
+       font-size: 1.1rem;
+       font-weight: 500;
+}
+
+article#main-col{
+    float: left;
+    width: 65%;
+    
+
+}
+article#main-col p{
+    font-family: 'Quintessential',serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+article#main-col h1{
+
+    margin-left: 2px;
+}
+.dark{
+    padding: 15px;
+    background: #3a504b;
+    color:#f7f7f7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 5px solid #ccff66;
+    border-radius: 15px;
+}
+.dark h3{
+    color:#ffff;
+
+}
+ul#services li{
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #cccc;
+    margin-bottom: 5px;
+    background:  #f7f7f7;
+}
+aside#sidebar .quote input,aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+.btn{
+    height: 30px;
+    background: #ffc600;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #f7f7f7;
+    align-items: center
+    ;
+}
+.btn:hover{
+    cursor: pointer;
+    color: #3a504b;
+    background-color: #52cfb2;
+    
+}
+@media(max-width:768px){
+    header #branding,
+    header nav,
+    #boxes .box ,
+    article#main-col,aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+
+    }
+    header nav {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #showcase h1{
+        font-size: 25px;
+    }
+    aside#sidebar{
+        margin-bottom: 120px;
+    }
+    
+}
